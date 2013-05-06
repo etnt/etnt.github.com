@@ -1,0 +1,74 @@
+body {
+  background-color: #2B2E36;
+  color: #F2D9A0;
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+}
+
+a         { color: #54877E; }
+a:hover   { color: #548700; }
+a:visited { color: #9E373E; }
+
+ul.posts span {
+  color: #B1B88C;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+.site .header h1.title a {
+  color: #a00;
+}
+
+.site .header h1.title a:hover {
+  color: #000;
+}
+
+.site .header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.site .header a.extra:hover {
+  color: #000;
+}
+
+.site .meta {
+  color: #aaa;
+}
+
+.site .footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.site .footer .contact a {
+  color: #8085C1;
+}
+
+#post pre {
+  border: 1px solid #ddd;
+  background-color: #000;
+  color: #FFF;
+  padding: 0 .4em;
+}
+
+#post code {
+  border: 1px solid #ddd;
+  background-color: #000;
+  color: #FFF;
+  padding: 0 .2em;
+}
+
+#post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+#post pre.terminal code {
+  background-color: #333;
+}

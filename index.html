@@ -1,15 +1,18 @@
-<html>
-  <head>
-    <title>etnt at github</title>
-    <link rel="openid.server" href="http://www.myopenid.com/server" />
-    <link rel="openid.delegate" href="http://etnt.myopenid.com/" />
-</head>
-  <body>
-    <p>
-      I've got an experiment coming up...
-    </p>
-    <p>
-      Until then, have a look at <a href="http://www.tornkvist.org/">www.tornkvist.org</a>
-    </p>
-  </body>
-</html>
+---
+layout: default
+title: My Notes
+---
+<div id="home">
+  <h1>Notes <a style="font-size:smaller;" href="/categories.html">(sorted by Categories)</a></h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+      <span style="font-size:smaller;">&nbsp;[
+        {% for category in post.categories %}
+        <a href="/{{category}}">{{category}}</a>
+        {% endfor %}
+        ]</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
